@@ -15,10 +15,10 @@
 <br />
 
 ## Подключение модуля
-В данном репозитории точкой вхождения ___Webpack___ является _./js/script.js_.
+В данном репозитории точкой вхождения ___Webpack___ является _./src/js/script.js_.
 <br /> Импортируем в него модуль со скриптом слайдера:
 ```javascript
-// Точка вхождения Webpack: "./js/script.js'
+// Точка вхождения Webpack: "./src/js/script.js'
 "use strict";
 
 import tabs from './modules/tabs';
