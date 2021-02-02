@@ -4,7 +4,6 @@ function tabs(tabSelector, tabsContentSelector, tabsParentSelector, activeClass)
         tabsContent = document.querySelectorAll(tabsContentSelector),
         tabsParent = document.querySelector(tabsParentSelector);
 
-    // Скрываем табы
     function hideTabContent() {
         tabsContent.forEach((item) => {
             item.classList.add('hide');
@@ -15,8 +14,7 @@ function tabs(tabSelector, tabsContentSelector, tabsParentSelector, activeClass)
             item.classList.remove(activeClass);
         });
     }
-
-    // Показываем табы
+    
     function showTabContent(i = 0) {
         tabsContent[i].classList.add('show', 'fade');
         tabsContent[i].classList.remove('hide');
